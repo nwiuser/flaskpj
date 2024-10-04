@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé de texte</title>
+</head>
+<body>
+    <h2>Résumé de texte</h2>
+    <form method="POST">
+        <label for="text">Entrez votre texte à résumer :</label><br>
+        <textarea id="text" name="text" rows="4" cols="50" placeholder="Entrez votre texte ici...">{{ text_entered }}</textarea><br><br>
+        <button type="submit">Résumer</button>
+    </form>
+
+    <h3>Texte résumé :</h3>
+    <p>{{ text_to_show }}</p>
+</body>
+</html>
